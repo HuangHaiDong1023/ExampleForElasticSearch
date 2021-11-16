@@ -1,6 +1,6 @@
-package com.hellobike.locallife.example.application.config;
+package com.huanghaidong.locallife.example.application.config;
 
-import com.hellobike.locallife.example.common.Constants;
+import com.huanghaidong.locallife.example.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;

@@ -1,4 +1,4 @@
-package com.hellobike.locallife.example.common;
+package com.huanghaidong.locallife.example.common;
 
 public class Constants {
 

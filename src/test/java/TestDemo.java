@@ -1,5 +1,5 @@
 import com.alibaba.fastjson.JSONObject;
-import com.hellobike.locallife.example.deploy.Application;
+import com.huanghaidong.locallife.example.deploy.Application;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.index.IndexRequest;
@@ -17,7 +17,6 @@ import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.junit.Test;
@@ -84,7 +83,7 @@ public class TestDemo {
 
         JSONObject shop = new JSONObject();
         shop.put("shopId", 1);
-        shop.put("shopName", "哈啰生活门店1");
+        shop.put("shopName", "huanghaidong本地生活门店1");
         shop.put("merchantId", "20012421");
 
         indexRequest.source(shop.toJSONString(), XContentType.JSON);
@@ -101,7 +100,7 @@ public class TestDemo {
 
         JSONObject shop = new JSONObject();
         shop.put("shopId", 1);
-        shop.put("shopName", "哈啰生活门店2");
+        shop.put("shopName", "huanghaidong本地生活门店2");
         shop.put("merchantId", "20012421");
 
         updateRequest.doc(shop.toJSONString(), XContentType.JSON);
