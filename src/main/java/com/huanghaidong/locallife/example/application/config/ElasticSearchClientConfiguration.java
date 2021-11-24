@@ -20,9 +20,6 @@ public class ElasticSearchClientConfiguration {
     @Value("${elasticsearch.clusternodes}")
     private String clusterNodes;
 
-
-
-
     private RestHighLevelClient restHighLevelClient;
 
     @Bean
