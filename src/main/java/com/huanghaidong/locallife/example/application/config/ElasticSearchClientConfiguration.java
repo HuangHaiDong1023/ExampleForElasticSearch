@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PreDestroy;
 
+
+
 @Configuration
 @Slf4j
 public class ElasticSearchClientConfiguration {
